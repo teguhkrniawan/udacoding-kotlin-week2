@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:background="@drawable/bg_card">
+
+        <TextView
+            android:id="@+id/txtNameHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            tools:text="Teguh Kurniawan"/>
+
+        <TextView
+            android:id="@+id/txtBmiHome"
+            android:layout_below="@id/txtNameHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            tools:text="BMI : 12.37"/>
+
+        <TextView
+            android:id="@+id/txtStatusBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            tools:text="Overweight"/>
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal">
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/konsultasiDokterBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="200dp"
+           android:layout_marginEnd="10dp"
+           app:cardCornerRadius="20dp"
+           android:background="@drawable/bg_card"
+           app:cardBackgroundColor="#F1CD2F"
+           app:cardElevation="0dp"
+           android:padding="10dp"
+           android:layout_weight="1">
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_gravity="center">
+
+             <ImageView
+                 android:layout_marginBottom="10dp"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/stetoskop"
+                 android:layout_gravity="center"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAlignment="center"
+                 android:textSize="20sp"
+                 android:textColor="@android:color/white"
+                 android:text="@string/konsultasi_ndokter"/>
+
+          </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/artikelBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="200dp"
+           android:padding="10dp"
+           app:cardBackgroundColor="#F1CD2F"
+           app:cardCornerRadius="20dp"
+           android:elevation="0dp"
+           android:layout_weight="1">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_gravity="center">
+
+               <ImageView
+                   android:layout_marginBottom="10dp"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/stetoskop"
+                   android:layout_gravity="center"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAlignment="center"
+                   android:textSize="20sp"
+                   android:textColor="@android:color/white"
+                   android:text="@string/artikel_nkesehatan"/>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+   </LinearLayout>
+
+</LinearLayout>

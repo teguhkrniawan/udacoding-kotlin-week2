@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ImplementasiListviewActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/kami_siap_membantu"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:id="@+id/txt_judul_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_below="@id/txt_judul_list"
+        android:background="@android:color/white"
+        android:id="@+id/dokterListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_list_dokter"/>
+
+</RelativeLayout>

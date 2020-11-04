@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_images"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_marginHorizontal="50dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/detail_dokter_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/avatar"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/detail_dokter_name"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        tools:text="Teguh Kurniawan"/>
+
+    <TextView
+        android:id="@+id/detail_dokter_deskripsi"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        tools:text="@string/deskripis"/>
+
+    <Button
+        android:id="@+id/detail_btn_whastapp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3BA72F"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/ic_whatsapp"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/hubungi"/>
+
+</LinearLayout>

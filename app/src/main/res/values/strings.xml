@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Week 2</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="teguhkrniawan_gmail_com">user@gmail.com</string>
+    <string name="masuk">Masuk</string>
+    <string name="lengkapi_form_berikut">Lengkapi Form Berikut</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="maaf">MAAF</string>
+    <string name="ok">OK</string>
+    <string name="tinggi_badan">Tinggi Badan (cm)</string>
+    <string name="berat_badan_kg">Berat Badan (kg)</string>
+    <string name="minimal_6_karakter">Minimal 6 Karakter</string>
+    <string name="artikel_nkesehatan">Artikel \nKesehatan</string>
+    <string name="konsultasi_ndokter">Konsultasi \nDokter</string>
+    <string name="kami_siap_membantu">Kami Siap Membantu</string>
+    <string name="deskripis">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English.</string>
+    <string name="hubungi">Hubungi</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    tools:context=".MemberIdentityActivity">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/lengkapi_form_berikut"/>
+
+    <EditText
+        android:id="@+id/nameMemberIdentity"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/nama_lengkap"
+        android:textSize="12sp"
+        android:paddingStart="10dp"
+        android:background="@drawable/bg_edit_text"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/dateMemberIdentity"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/tanggal_lahir"
+        android:textSize="12sp"
+        android:paddingStart="10dp"
+        android:background="@drawable/bg_edit_text"
+        tools:ignore="RtlSymmetry"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/heightMember"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/tinggi_badan"
+        android:textSize="12sp"
+        android:paddingStart="10dp"
+        android:inputType="number"
+        android:background="@drawable/bg_edit_text"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/weightMember"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:hint="@string/berat_badan_kg"
+        android:textSize="12sp"
+        android:paddingStart="10dp"
+        android:background="@drawable/bg_edit_text"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/lanjutkanBtnMemberIdentity"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/lanjutkan"
+        android:textAllCaps="false"
+        tools:ignore="RtlHardcoded" />
+
+</LinearLayout>

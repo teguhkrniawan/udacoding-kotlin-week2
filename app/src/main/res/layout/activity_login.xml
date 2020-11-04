@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context=".LoginActivity">
+
+   <ImageView
+       android:id="@+id/logoLogin"
+       android:layout_width="200dp"
+       android:layout_height="100dp"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/bmi_app"/>
+
+    <LinearLayout
+        android:layout_below="@id/logoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/teguhkrniawan_gmail_com"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textSize="12sp"
+            android:hint="@string/minimal_6_karakter"
+            android:background="@drawable/bg_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/masukBtnLogin"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:text="@string/masuk"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+</RelativeLayout>
