@@ -43,5 +43,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        artikelBtn.setOnClickListener {
+            val intent = Intent(this, ImplementasiRvActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

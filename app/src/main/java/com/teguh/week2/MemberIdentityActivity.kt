@@ -44,7 +44,7 @@ class MemberIdentityActivity : AppCompatActivity(), IDatePicker {
            val bmi: Double? =  weight.toDouble() / (heightToMeter.toDouble()*heightToMeter.toDouble())
 
            if (age != null && bmi != null) {
-               if (age!! > 20){
+               if (age!! >= 20){
                    val intent = Intent(this, HomeActivity::class.java)
                    intent.putExtra(NAME_EXTRA_KEY, name)
                    intent.putExtra(BMI_EXTRA_KEY, bmi)
